@@ -56,7 +56,7 @@ ggsave(here::here("figs", "stl_lead_plot.png"),
 
 ### Histogram
 ```{r}
-pct_elevated_plot <- ggplot(data = stl_lead_prop, aes(x = pct_elevated)) + geom_histogram() + labs(title = "PCT Elevated",
+pct_elevated_plot <- ggplot(data = stl_lead_prop, aes(x = pct_elevated)) + geom_histogram(color = "red", fill="white") + labs(title = "PCT Elevated",
        x = "PCT elevated", 
        y = "Count")
 
